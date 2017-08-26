@@ -114,7 +114,7 @@ def in_order(tree, nodes=None):
 
 
 def main():
-    print("=== Binary Tree - A data structure in which a record is linked to two successor records, usually referred to as the left branch when less and the right when greater than the previous record ")
+    print("=== Binary Tree - A data structure in which a record is linked to two successor records, usually referred to as the left branch when less and the right when greater than the previous record")
 
     bst = BST()
 
