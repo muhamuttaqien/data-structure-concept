@@ -113,21 +113,26 @@ def in_order(tree, nodes=None):
     return nodes
 
 
-print("=== Binary Tree - A data structure in which a record is linked to two successor records, usually referred to as the left branch when less and the right when greater than the previous record ")
+def main():
+    print("=== Binary Tree - A data structure in which a record is linked to two successor records, usually referred to as the left branch when less and the right when greater than the previous record ")
 
-bst = BST()
+    bst = BST()
 
-data = [10, 5, 6, 3, 8, 2, 1, 11, 9, 4]
+    data = [10, 5, 6, 3, 8, 2, 1, 11, 9, 4]
 
-for datum in data:
-    bst._add(datum)
+    for datum in data:
+        bst._add(datum)
 
-print("Searching for nodes 16 and 6:")
-print(bst._search(16))
-print(bst._search(6))
+    print("Searching for nodes 16 and 6:")
+    print(bst._search(16))
+    print(bst._search(6))
 
 
-print("Preorder: {}".format(pre_order(bst.root)))
-print("Postorder: {}".format(post_order(bst.root)))
-print("Inorder: {}".format(in_order(bst.root)))
-print("Preorder: {}".format(pre_order(bst.root)))
+    print("Preorder: {}".format(pre_order(bst.root)))
+    print("Postorder: {}".format(post_order(bst.root)))
+    print("Inorder: {}".format(in_order(bst.root)))
+    print("Preorder: {}".format(pre_order(bst.root)))
+
+
+if __name__=='__main__':
+	main()

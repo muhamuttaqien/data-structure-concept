@@ -68,21 +68,28 @@ class LinkedList:
             print(node.data)
             node = node.next
 
-print("=== Linked List - An ordered set of data elements, each containing a link to its successor")
 
-ll = LinkedList()
+def main():
+    print("=== Linked List - An ordered set of data elements, each containing a link to its successor")
 
-for i in range (1, 10):
-    ll._add(i)
+    ll = LinkedList()
 
-print("The list is: ")
-ll._get_list()
+    for i in range (1, 10):
+        ll._add(i)
 
-data = input("[INT, 0 to exit] What index you want to delete? ")
+    print("The list is: ")
+    ll._get_list()
 
-while data != 0:
-    ll._delete_node(data)
-    data = input('[INT, 0 to exit] What index you want to delete? ')
+    data = input("[INT, 0 to exit] What index you want to delete? ")
 
-print("The list after deleting node with index: ")
-ll._get_list()
+    while data != 0:
+        ll._delete_node(data)
+        ll._get_list()    
+        data = input('[INT, 0 to exit] What index you want to delete? ')
+
+    print("The list after deleting node with index: ")
+    ll._get_list()
+
+
+if __name__=='__main__':
+	main()

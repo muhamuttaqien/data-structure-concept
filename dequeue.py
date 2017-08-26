@@ -27,19 +27,24 @@ class Dequeue:
     def _get_list(self):
         return self.items
 
-print("=== DEQUEUE - First In First Out for Both Side")
-data = input("[INT, 0 to exit] What is your data? ")
-dq = Dequeue()
-while data != 0:
-    dq._add_front(data)
-    print(dq._get_list())
-    data = input('[INT, 0 to exit] What is your data? ')
+def main():
+    print("=== DEQUEUE - First In First Out for Both Side")
+    data = input("[INT, 0 to exit] What is your data? ")
+    dq = Dequeue()
+    while data != 0:
+        dq._add_front(data)
+        print(dq._get_list())
+        data = input('[INT, 0 to exit] What is your data? ')
 
-data = raw_input("[Y/N] Remove data: ")
-data = data.upper()
-while data !=  'N':
-    dq._remove_front()
-    print(dq._get_list())
-    data = raw_input('[[Y/N] Remove data: ')
+    data = raw_input("[Y/N] Remove data: ")
+    data = data.upper()
+    while data !=  'N':
+        dq._remove_front()
+        print(dq._get_list())
+        data = raw_input('[[Y/N] Remove data: ')
 
-print('Thank you!')
+    print('Thank you!')
+
+
+if __name__=='__main__':
+	main()
