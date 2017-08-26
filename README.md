@@ -19,3 +19,5 @@ As an aggregate data structure. A record is a value that contains other values, 
 4. Class 
 
 As a data structure that contains data fields, like a record, as well as various methods which operate on the contents of the record. In the context of OOP (object-oriented programming), records are known as plain old data structures to distinguish them from classes.
+
+You can refer to this link related to algorithm and data structure animations: https://visualgo.net/en
